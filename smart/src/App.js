@@ -65,6 +65,7 @@ function App(props) {
             setDay(() => {
               return modifyDays(res.data.is_continue)
             })
+            setSignCount(res.data.is_continue.length)
           })
         }else{
           setSignStatus(()=>{
